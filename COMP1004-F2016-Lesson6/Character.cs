@@ -3,6 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+/**
+ * Name: Tom Tsiliopoulos
+ * Date: October 13, 2016
+ * StudentID: 123456
+ */
+
 namespace COMP1004_F2016_Lesson6
 {
     public class Character
