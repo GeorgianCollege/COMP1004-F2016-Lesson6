@@ -87,22 +87,20 @@ namespace COMP1004_F2016_Lesson6
 
         private void AbilityForm_Load(object sender, EventArgs e)
         {
+
             this.RollAbilities();
         }
 
-        private void AbilityVisibleCheckBox_CheckedChanged(object sender, EventArgs e)
+        private void NextButton_Click(object sender, EventArgs e)
         {
-            if (AbilityVisibleCheckBox.Checked)
-            {
-                StrengthLabel.Visible = true;
-                StrengthTextBox.Visible = true;
-            }
-            else
-            {
-                StrengthLabel.Visible = false;
-                StrengthTextBox.Visible = false;
-            }
+            // create an instance of the next form
+            RaceForm raceForm = new RaceForm();
 
+            // set the previousForm property of the next form to this form
+            raceForm.previousForm = this;
+
+            raceForm.Show(); // show the next form
+            this.Hide(); // hide this form
         }
     }
 }

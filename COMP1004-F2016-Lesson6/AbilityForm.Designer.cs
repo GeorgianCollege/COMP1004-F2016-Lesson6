@@ -41,7 +41,7 @@
             this.CharismaTextBox = new System.Windows.Forms.TextBox();
             this.CharismaLabel = new System.Windows.Forms.Label();
             this.RollButton = new System.Windows.Forms.Button();
-            this.AbilityVisibleCheckBox = new System.Windows.Forms.CheckBox();
+            this.NextButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // StrengthLabel
@@ -172,7 +172,7 @@
             // 
             // RollButton
             // 
-            this.RollButton.Location = new System.Drawing.Point(81, 321);
+            this.RollButton.Location = new System.Drawing.Point(12, 321);
             this.RollButton.Name = "RollButton";
             this.RollButton.Size = new System.Drawing.Size(228, 44);
             this.RollButton.TabIndex = 12;
@@ -180,25 +180,22 @@
             this.RollButton.UseVisualStyleBackColor = true;
             this.RollButton.Click += new System.EventHandler(this.RollButton_Click);
             // 
-            // AbilityVisibleCheckBox
+            // NextButton
             // 
-            this.AbilityVisibleCheckBox.AutoSize = true;
-            this.AbilityVisibleCheckBox.Checked = true;
-            this.AbilityVisibleCheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.AbilityVisibleCheckBox.Location = new System.Drawing.Point(315, 30);
-            this.AbilityVisibleCheckBox.Name = "AbilityVisibleCheckBox";
-            this.AbilityVisibleCheckBox.Size = new System.Drawing.Size(129, 36);
-            this.AbilityVisibleCheckBox.TabIndex = 13;
-            this.AbilityVisibleCheckBox.Text = "Visible";
-            this.AbilityVisibleCheckBox.UseVisualStyleBackColor = true;
-            this.AbilityVisibleCheckBox.CheckedChanged += new System.EventHandler(this.AbilityVisibleCheckBox_CheckedChanged);
+            this.NextButton.Location = new System.Drawing.Point(252, 321);
+            this.NextButton.Name = "NextButton";
+            this.NextButton.Size = new System.Drawing.Size(228, 44);
+            this.NextButton.TabIndex = 13;
+            this.NextButton.Text = "Next";
+            this.NextButton.UseVisualStyleBackColor = true;
+            this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
             // AbilityForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(606, 395);
-            this.Controls.Add(this.AbilityVisibleCheckBox);
+            this.ClientSize = new System.Drawing.Size(492, 395);
+            this.Controls.Add(this.NextButton);
             this.Controls.Add(this.RollButton);
             this.Controls.Add(this.CharismaTextBox);
             this.Controls.Add(this.CharismaLabel);
@@ -213,7 +210,8 @@
             this.Controls.Add(this.StrengthTextBox);
             this.Controls.Add(this.StrengthLabel);
             this.Font = new System.Drawing.Font("Lucida Sans", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
             this.Name = "AbilityForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ability Form";
@@ -238,7 +236,7 @@
         private System.Windows.Forms.TextBox CharismaTextBox;
         private System.Windows.Forms.Label CharismaLabel;
         private System.Windows.Forms.Button RollButton;
-        private System.Windows.Forms.CheckBox AbilityVisibleCheckBox;
+        private System.Windows.Forms.Button NextButton;
     }
 }
 
